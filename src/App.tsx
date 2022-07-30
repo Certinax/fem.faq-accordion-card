@@ -35,21 +35,21 @@ const FAQList: React.FC<{ faqs: typeof FAQS }> = ({ faqs }) => {
 
 function App() {
   return (
-    <div className="min-h-screen p-8">
-      <div className="max-w-sm shadow-2xl mt-44 rounded-2xl bg-white">
-        <div className="flex justify-center">
-          <div className="w-full px-8 relative origin-center -translate-y-[56%]">
+    <div className="min-h-screen  p-8">
+      <div className="">
+        <div className="max-w-sm shadow-2xl mt-44 mx-auto rounded-2xl bg-white">
+          <div className="w-full px-8 relative origin-center -translate-y-[60%]">
             <img className="" src={illustrationMobile} alt="" />
             <img
-              className="absolute top-0 left-0 px-8 -mt-[24px]"
+              className="absolute top-0 left-0 px-8 -mt-[5vmin]"
               src={bgPatternDesktop}
               alt=""
             />
           </div>
-        </div>
-        <div className="p-6">
-          <h2 className="text-3xl text-center font-semibold">FAQ</h2>
-          <FAQList faqs={FAQS} />
+          <div className="p-6">
+            <h2 className="text-3xl text-center font-semibold">FAQ</h2>
+            <FAQList faqs={FAQS} />
+          </div>
         </div>
       </div>
     </div>
